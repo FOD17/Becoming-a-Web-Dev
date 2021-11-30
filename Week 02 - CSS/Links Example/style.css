@@ -1,0 +1,27 @@
+* {
+  background-color: darkgrey;
+}
+
+a {
+  font-size: 45px;
+  color: rgb(11, 11, 121);
+  text-decoration: none;
+}
+
+/* Psuedo Selectors (not exhaustive) */
+/* notice they override the general a styling */
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* mouse hover link */
+a:hover {
+  font-size: 50px;
+}
+
+/* active link (moment it is clicked) */
+a:active {
+  color: aliceblue;
+}

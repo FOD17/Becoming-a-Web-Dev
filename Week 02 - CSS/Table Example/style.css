@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+}
+
+th {
+  background-color: white;
+}
+
+table,
+td,
+td {
+  border: 2px solid black;
+}
+
+th,
+td {
+  font-size: 35px;
+}
+
+tr:nth-child(odd) {
+  background-color: gray;
+}
+
+tr:hover {
+  background-color: green;
+}

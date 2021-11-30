@@ -1,0 +1,13 @@
+img {
+  max-width: 100%;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 2px 3px 4px 1px black;
+}
+
+.bernie-img {
+  width: 150px;
+  /* center */
+  display: block;
+  margin: auto;
+  /*       */
+}

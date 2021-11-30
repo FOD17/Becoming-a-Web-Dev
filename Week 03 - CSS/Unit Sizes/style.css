@@ -1,0 +1,22 @@
+#size-px {
+  font-size: 32px;
+}
+
+#size-em {
+  /* notice this is the same size as #size-px */
+  font-size: 2em;
+}
+
+
+#size-rem {
+    /* base size for p tag is 16px */
+  font-size: 3rem;
+}
+
+#size-vw {
+    font-size: 5vw;
+}
+
+#size-vh {
+    font-size: 5vh;
+}

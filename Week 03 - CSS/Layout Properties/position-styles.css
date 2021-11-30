@@ -1,0 +1,12 @@
+p {
+  font-size: 20px;
+}
+
+div {
+  font-size: 25px;
+  border: 2px solid black;
+  position: absolute;
+
+  /* position: sticky;
+  top: 30px; */
+}

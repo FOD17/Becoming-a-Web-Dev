@@ -1,0 +1,14 @@
+p{
+    /* Impacts content */
+    font-size: 30px;
+    background-color: azure;
+
+    /* Impacts padding */
+    padding: 25px;
+
+    /* Impacts Border */
+    border: 10px solid black;
+
+    /* Impacts Margin */
+    margin: 20px;
+}

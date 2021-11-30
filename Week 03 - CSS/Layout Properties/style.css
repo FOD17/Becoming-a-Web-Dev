@@ -1,0 +1,15 @@
+.column {
+  /* toggle between left right none */
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.left-col,
+.middle-col,
+.right-col {
+  border: 1px solid black;
+  width: 33%;
+}
