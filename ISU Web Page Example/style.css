@@ -1,0 +1,68 @@
+* {
+  background-color: #f0ecec;
+}
+
+#page-title {
+  font-size: 45px;
+  text-align: center;
+  text-shadow: 3px 3px 1px #d8c5c5;
+}
+
+#image-wrapper {
+  text-align: center;
+}
+
+.bernie-img {
+  width: 20%;
+}
+
+#fan-club-heading {
+  font-size: 35px;
+  text-align: center;
+}
+
+.reason-wrapper {
+  text-align: center;
+}
+
+.join-reasons {
+  display: inline-block;
+  font-size: 25px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul > li {
+  line-height: 50px;
+}
+
+.form-wrapper {
+  text-align: center;
+  font-size: 34px;
+}
+
+form {
+  background-color: #c2d7e5;
+}
+
+label {
+  background-color: transparent;
+}
+
+#email-label {
+  padding-left: 67px;
+}
+
+input {
+  font-size: 24px;
+  height: 45px;
+  width: 250px;
+}
+
+form > button {
+  font-size: 25px;
+  border-radius: 5%;
+  background-color: aquamarine;
+}
