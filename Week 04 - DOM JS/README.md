@@ -3,4 +3,5 @@
 ## Order
 
 - Basic JavaScript
-- DOM PraACTICE
+- DOM Practice 1
+- DOM Practice - 2
