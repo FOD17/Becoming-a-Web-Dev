@@ -10,14 +10,10 @@
     firstElementChild
     id
     innerHTML
-    innerText
-    insertBefore()
     outerHTML
     outerText
     parentElement
-    previousSibling()
-    remove()
-    setAttributeNode()
+    previousElementSibling
     textContent
  */
 
@@ -46,7 +42,7 @@ console.log(elementKidNodes);
 
 /**
  * Example 4
- * childNodes (notice it returns what you expect)
+ * children (notice it returns what you expect)
  * */
 let elementChildren = document.getElementById('list').children;
 console.log(elementChildren);
@@ -64,3 +60,54 @@ document.getElementById('node').className = 'updated-class';
  * */
 let closestThing = document.getElementById('list').closest('#body');
 console.log(closestThing);
+
+/**
+ * Example 7
+ * firstChild
+ * */
+let firstChild = document.getElementById('list').firstChild;
+console.log(firstChild);
+
+/**
+ * Example 8
+ * firstChild
+ * */
+let firstChildEle = document.getElementById('list').firstElementChild;
+console.log(firstChildEle);
+
+/**
+ * Example 9
+ * id
+ * */
+document.getElementById('p').id = 'updated-id';
+console.log(document.getElementById('updated-id').id);
+
+/**
+ * Example 10
+ * innerHTML
+ * */
+document.getElementById('updated-id').innerHTML = 'Bernie is awesome';
+
+/**
+ * Example 11
+ * innerText
+ * Notice what it does to the list
+ * */
+//document.getElementById('list').innerHTML = 'Bernie is awesome';
+
+/**
+ * Example 12
+ * parentElement
+ * */
+let listParent = document.getElementById('list').parentElement;
+console.log('listParent', listParent);
+let h2Parent = document.getElementById('att-fun').parentElement;
+console.log('h2Parent', h2Parent);
+
+/**
+ * Example 13
+ * previousElementSibling
+ * */
+let previousSibling = document.getElementById('li-3').previousElementSibling;
+console.log('previousSibling', previousSibling);
+
