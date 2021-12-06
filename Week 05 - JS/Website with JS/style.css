@@ -1,0 +1,61 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+h1 {
+  font-size: 72px;
+  background: linear-gradient(90deg, #d53369 0%, #ad9561 50%, #daae51 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 62px;
+  color: white;
+}
+
+p {
+  font-size: 26px;
+  color: white;
+}
+
+textarea {
+  font-size: 18px;
+  background: rgb(104, 98, 164);
+  background: linear-gradient(
+    90deg,
+    rgba(104, 98, 164, 1) 12%,
+    rgba(219, 121, 192, 0.33657212885154064) 99%
+  );
+  color: white;
+  border: 1px solid white;
+  display: block;
+  margin-bottom: 30px;
+}
+
+button {
+  width: 300px;
+  height: 44px;
+  font-size: 24px;
+  color: #d53369;
+  background: rgb(224, 189, 8);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 189, 8, 1) 15%,
+    rgba(121, 190, 219, 0.33657212885154064) 99%
+  );
+}
+
+ul {
+  font-size: 45px;
+  list-style: none;
+  background: linear-gradient(90deg, #d53369 0%, #ad9561 50%, #daae51 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
