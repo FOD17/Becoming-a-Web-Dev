@@ -1,0 +1,29 @@
+body {
+  background: rgb(33, 180, 222);
+  background: linear-gradient(
+    90deg,
+    rgba(33, 180, 222, 1) 15%,
+    rgba(25, 81, 84, 0.33657212885154064) 99%
+  );
+}
+
+h1 {
+  font-size: 68px;
+}
+
+p {
+  font-size: 45px;
+}
+
+#example {
+  top: 350px;
+  position: absolute;
+}
+
+.jq-buttons {
+  font-size: 26px;
+  margin-right: 20px;
+  color: black;
+  margin: 25px;
+  background-color: silver;
+}
