@@ -5,20 +5,20 @@
 // We can also do this in the web console, replit, or in node
 
 // Variables - var, let, const
-var myName = "Bernie"
-let dogAge = 1
-let myBreed = "Havanese"
-const cute = True
+var myName = 'Bernie';
+let dogAge = 1;
+let myBreed = 'Havanese';
+const cute = True;
 
 // Show something is "private"
-var _favoriteFood = "pizza"
+var _favoriteFood = 'pizza';
 
 // Array
-let todoList = ["Sleep", "Walk Bernie", "Sleep"]
+let todoList = ['Sleep', 'Walk Bernie', 'Sleep'];
 
 // Object
-const dog = { name: "Bernie", breed: "havanese" }
-dog.colors = "black and white"
+const dog = { name: 'Bernie', breed: 'havanese' };
+dog.colors = 'black and white';
 
 // Conditionals
 if (isTrue) {
@@ -31,11 +31,11 @@ if (isTrue) {
 
 switch (key) {
   case value: // do something
-    break
+    break;
 
   default:
     // do default thing or nothing at all
-    break
+    break;
 }
 
 // Loops - for, for/in, for/of, while, do/while
@@ -55,23 +55,17 @@ while (condition) {
   // do something
 }
 
-do {} while (condition)
+do {} while (condition);
 
 // Functions
 function addFive(number) {
-  return number + 5
+  return number + 5;
 }
 
 const addSix = (number) => {
-  return number + 6
-}
+  return number + 6;
+};
 
-const addSeven = (function (number) {
-  return number + 7
-})(
-  // Below is an immediately invoked function expressiom
-  function () {
-    let num = 4
-    return num
-  }
-)()
+const addSeven = function (number) {
+  return number + 7;
+};
