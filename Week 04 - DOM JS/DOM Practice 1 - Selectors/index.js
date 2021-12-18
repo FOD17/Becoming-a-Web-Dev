@@ -23,6 +23,7 @@ let allQueries = document.querySelectorAll('p');
 console.log(allQueries);
 
 // getElementsByTagName()
+// a tag is a read only element
 let taggedElements = document.getElementsByTagName('div');
 console.log(taggedElements);
 
