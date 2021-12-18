@@ -21,16 +21,21 @@ const dog = { name: 'Bernie', breed: 'havanese' };
 dog.colors = 'black and white';
 
 // Conditionals
-if (isTrue) {
+const x = 11;
+if (x > 10) {
   // do something
-} else if (isTrue) {
+} else if (X > 5) {
   // do something
 } else {
   // do something
 }
 
-switch (key) {
-  case value: // do something
+const value = 5;
+switch (value) {
+  case 5: // do something
+    break;
+
+  case 4:
     break;
 
   default:
@@ -43,19 +48,27 @@ for (let i = 0; i < 5; i++) {
   // do something
 }
 
+let todoList = ['Sleep', 'Walk Bernie', 'Sleep'];
+for (const item of todoList) {
+  console.log(item);
+}
+
+const dog = { dogOne: 'Bernie', dogTwo: 'Fido', dogThree: 'Woof Woof' };
 for (const key in dog) {
-  // do something
+  console.log(key, dog[key]);
 }
 
-for (const iterator of object) {
-  // do something
+let x = 20;
+while (x >= 10) {
+  console.log(x);
+  x = x - 1;
 }
 
-while (condition) {
-  // do something
-}
-
-do {} while (condition);
+let x = 20;
+do {
+  console.log(x);
+  x = x - 1;
+} while (x >= 10);
 
 // Functions
 function addFive(number) {
