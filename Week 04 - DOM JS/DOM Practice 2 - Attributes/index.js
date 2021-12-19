@@ -19,7 +19,7 @@
 
 /**
  * Example 1
- * appendChild, innerText, createTextNpde, createElement
+ * appendChild, innerText, createTextNode, createElement
  * */
 let appendedElement = document.createElement('h2');
 let text = document.createTextNode('MAGIC!');
@@ -58,7 +58,7 @@ document.getElementById('node').className = 'updated-class';
  * closest
  * use #h1 and #p to show it overlooks siblings
  * */
-let closestThing = document.getElementById('list').closest('#body');
+let closestThing = document.getElementById('list').closest('body');
 console.log(closestThing);
 
 /**
@@ -110,4 +110,3 @@ console.log('h2Parent', h2Parent);
  * */
 let previousSibling = document.getElementById('li-3').previousElementSibling;
 console.log('previousSibling', previousSibling);
-
