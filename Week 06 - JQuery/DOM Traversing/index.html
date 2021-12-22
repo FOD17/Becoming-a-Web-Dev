@@ -4,14 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dom Traversing</title>
+    <title>DOM Traversing</title>
+
+    <style>
+      .highlight {
+        background: yellow;
+      }
+    </style>
   </head>
   <body>
-    <h1 id="main">Do some stuff</h1>
-    <button id="h1">Add Text</button>
-    <button id="h1-content">Add Content</button>
-    <button id="h1-content-before">Add Content Before</button>
-    <button id="h1-content-after">Add Content After</button>
+    <div>
+      <h1 id="main">Do some stuff</h1>
+    </div>
+
+    <div>
+      <div>
+        <div>
+          <p id="child">Little Child</p>
+        </div>
+      </div>
+    </div>
+    <ul>
+      <li>Item One</li>
+      <li id="kid">Item Two</li>
+      <li>Item Three</li>
+    </ul>
+
+    <button id="find-parent">Find h1 Parent</button>
+    <button id="find-parents">Find Little Child Parents</button>
+    <button id="find-siblings">Find Siblings</button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./index.js"></script>
