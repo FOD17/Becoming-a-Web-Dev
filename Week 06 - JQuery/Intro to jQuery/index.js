@@ -18,14 +18,12 @@ $(document).ready(function () {
   $("#animate-me").click(function () {
     $("#example").animate({
       left: "250px",
-      color: "green",
     })
   })
 
   $("#animate-revert").click(function () {
     $("#example").animate({
       left: "0px",
-      color: "white",
     })
   })
 
