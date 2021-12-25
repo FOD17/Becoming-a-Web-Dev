@@ -1,0 +1,39 @@
+body {
+  background: rgb(248, 233, 251);
+}
+
+h1 {
+  font-size: 48px;
+  text-decoration: underline;
+}
+
+.container {
+  border: 1px solid black;
+  height: 700px;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: auto auto auto;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background: rgb(193, 51, 218);
+  padding: 5px;
+  border: 5px solid black;
+  text-align: center;
+  font-size: 65px;
+}
+
+#special-square-2{
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: auto auto;
+  }
+}
