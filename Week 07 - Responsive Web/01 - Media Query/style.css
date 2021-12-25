@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  padding-bottom: 45px;
+}
+
+h1, h3{
+  text-align: center;
+}
+
+/* if screen is 768 or under: tablet size */
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  h3{
+    font-size: 36px;
+  }
+}
+
+/* if screen is 768 or under: mobile phone size */
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: rgb(182, 105, 192);
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h3{
+    font-size: 26px;
+  }
+}
