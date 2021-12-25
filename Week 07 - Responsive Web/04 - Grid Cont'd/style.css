@@ -1,0 +1,70 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main main main"
+    "menu photo photo photo photo photo"
+    "menu footer footer footer footer footer";
+  grid-gap: 10px;
+  /* background-color: #2196f3; */
+  padding: 10px;
+}
+
+.grid-container > div {
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-area: header;
+  float: left;
+}
+
+.item1 > h1 {
+  display: inline;
+}
+
+#menu-links {
+  float: right;
+}
+
+#menu-links,
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.item2 {
+  grid-area: menu;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.item3 {
+  grid-area: main;
+}
+
+.item5 {
+  grid-area: footer;
+  background-color: rgb(155, 144, 144);
+}
+
+.item6 {
+  grid-area: photo;
+}
+
+img {
+  float: left;
+  max-height: 90%;
+  max-width: 40%;
+  padding-left: 45px;
+}
