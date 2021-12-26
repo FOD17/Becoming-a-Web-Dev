@@ -200,7 +200,7 @@ footer a:hover {
   justify-content: space-around;
 }
 
-.stats {
+.benefits {
   padding: 45px 50px;
 }
 
@@ -277,11 +277,18 @@ footer a:hover {
 /* Tablets and Smaller */
 
 @media (max-width: 768px) {
+  .container {
+    overflow: visible;
+  }
+
   h3 {
     text-align: center;
   }
-  .grid,
-  .grid-3 {
+  .grid {
+    grid-template-columns: 100%;
+  }
+
+  .grid-item {
     grid-template-columns: 100%;
   }
 
@@ -295,18 +302,21 @@ footer a:hover {
     margin-left: 90px;
   }
 
-  .stats .flex {
+  .benefits .flex {
     flex-direction: column;
     align-items: center;
   }
 
-  .stats {
+  .benefits {
     text-align: center;
   }
 
-  .stat {
+  .benefit {
     width: 100%;
-    padding-right: 80px;
+  }
+
+  .testimonial {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .circle {
@@ -360,7 +370,7 @@ footer a:hover {
     margin-left: 10px;
   }
 
-  .stat {
+  .benefit {
     margin-bottom: 40px;
   }
 
@@ -375,5 +385,9 @@ footer a:hover {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     width: 90px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
