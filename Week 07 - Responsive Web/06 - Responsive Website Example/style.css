@@ -1,7 +1,4 @@
-/* Base Styles */
-
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -38,7 +35,12 @@ img {
   width: 100%;
 }
 
-.showcase img {
+.fas-custom {
+  font-size: 2em;
+  color: black;
+}
+
+.hero img {
   width: 50%;
 }
 
@@ -52,7 +54,7 @@ p {
 }
 
 footer {
-  background-color: purple;
+  background-color: #181d4f;
   padding: 20px 10px;
 }
 
@@ -66,8 +68,6 @@ footer a:hover {
   border-bottom: 2px solid #9867c5;
 }
 
-/* Classes */
-
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -75,7 +75,7 @@ footer a:hover {
 }
 
 .navbar {
-  background-color: purple;
+  background-color: #181d4f;
   height: 70px;
   padding: 0 30px;
 }
@@ -105,24 +105,24 @@ footer a:hover {
 }
 
 .navbar a:hover {
-  color: #9867c5;
-  border-bottom: 3px solid #9867c5;
+  color: #181d4f;
+  border-bottom: 3px solid #181d4f;
 }
 
-.showcase {
+.hero {
   height: 300px;
-  background-color: purple;
+  background-color: #181d4f;
 }
 
-.showcase p {
+.hero p {
   margin-bottom: 30px;
 }
 
-.showcase img {
+.hero img {
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
 }
 
-.showcase-form {
+.hero-form {
   padding-left: 7px;
 }
 
@@ -138,7 +138,7 @@ footer a:hover {
   grid-template-columns: 60% 40%;
 }
 
-.showcase input[type='email'] {
+.hero input[type='email'] {
   padding: 10px 70px 10px 0;
   font-size: 14px;
   border: none;
@@ -149,7 +149,7 @@ footer a:hover {
 .btn {
   border-radius: 6px;
   padding: 12px 20px;
-  background: #9867c5;
+  background: #4d57c8;
   border: none;
   margin-left: 10px;
   color: white;
@@ -158,7 +158,7 @@ footer a:hover {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.showcase-form {
+.hero-form {
   margin: auto;
 }
 
@@ -208,7 +208,7 @@ footer a:hover {
 }
 
 .stats .fa {
-  color: purple;
+  color: #181d4f;
 }
 
 .testimonial {
@@ -240,7 +240,7 @@ footer a:hover {
 
 .circle {
   background-color: transparent;
-  border: 3px solid purple;
+  border: 3px solid #636ccf;
   height: 90px;
   position: relative;
   top: -30px;
@@ -251,10 +251,8 @@ footer a:hover {
   width: 90px;
 }
 
-/* Add padding around the footer as well */
-
 footer {
-  background-color: purple;
+  background-color: #181d4f;
   padding: 20px 10px;
 }
 
@@ -270,11 +268,11 @@ footer .links li {
 }
 
 footer a:hover {
-  color: #9867c5;
-  border-bottom: 2px solid #9867c5;
+  color: #ffffff;
+  border-bottom: 2px solid #181d4f;
 }
 
-/* Tablets and Under */
+/* Tablets and Smaller */
 
 @media (max-width: 768px) {
   .grid,
@@ -282,21 +280,15 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 
-  /* Align all text to the center. This will move all text, including form centrally */
-
-  .showcase {
+  .hero {
     height: auto;
     text-align: center;
   }
-
-  /* This resets the width of the image container and adds margin space to the left */
 
   .image {
     width: 600px;
     margin-left: 80px;
   }
-
-  /* Changes the service sections from side-by-side orientation to each taking its own line. Aligns text to the center */
 
   .stats .flex {
     flex-direction: column;
@@ -305,8 +297,6 @@ footer a:hover {
   .stats {
     text-align: center;
   }
-
-  /* Makes sure each stat section does not exceed the width of parent */
 
   .stat {
     width: 100%;
@@ -351,14 +341,14 @@ footer a:hover {
   /* Set light purple background on nav links, make it a bit round and add some spacing */
 
   .navbar ul {
-    background: #9867c5;
+    background: #181d4f;
     border-radius: 5px;
     padding: 10px 0;
   }
 
   /* Align text to center */
 
-  .showcase {
+  .hero {
     height: auto;
     text-align: center;
   }

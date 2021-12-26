@@ -1,0 +1,21 @@
+/* Scale Up and Down */
+#bernie-pic-1 {
+  width: 100%;
+  height: auto;
+}
+
+/*scale down but never beyond 100% 
+    use churro.jpg
+*/
+#bernie-pic-2 {
+  max-width: 100%;
+  height: auto;
+}
+
+/* restrict to a maximum size
+*/
+#bernie-pic-3 {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
