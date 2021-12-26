@@ -64,14 +64,19 @@ footer a {
 }
 
 footer a:hover {
-  color: #9867c5;
-  border-bottom: 2px solid #9867c5;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.mega-wrapper {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1200px;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .navbar {
@@ -105,7 +110,7 @@ footer a:hover {
 }
 
 .navbar a:hover {
-  color: #181d4f;
+  color: #ffffff;
   border-bottom: 3px solid #181d4f;
 }
 
@@ -126,8 +131,7 @@ footer a:hover {
   padding-left: 7px;
 }
 
-.grid-item-1,
-.grid-item-2 {
+.grid-item {
   position: relative;
   top: 50px;
 }
@@ -162,12 +166,12 @@ footer a:hover {
   margin: auto;
 }
 
-.little-info {
+.additional-info {
   font-size: 15px;
   font-family: 'poppins', sans-serif;
 }
 
-.lower-container {
+.benefits-container {
   margin: 120px auto;
   padding: 0;
   max-width: 1400px;
@@ -177,7 +181,7 @@ footer a:hover {
 .title {
   color: black;
   font-size: 20px;
-  text-align: left;
+  text-align: center;
   padding-left: 10px;
   padding-top: 10px;
 }
@@ -198,22 +202,20 @@ footer a:hover {
 
 .stats {
   padding: 45px 50px;
-  text-align: center;
 }
 
-.stat {
+.benefit {
   margin: 0 30px;
   text-align: center;
   width: 800px;
 }
 
-.stats .fa {
-  color: #181d4f;
-}
-
 .testimonial {
   color: black;
   padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
 
 .testimonial img {
@@ -225,7 +227,7 @@ footer a:hover {
   text-align: center;
 }
 
-.grid-3 {
+.footer-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
@@ -256,8 +258,6 @@ footer {
   padding: 20px 10px;
 }
 
-/* Sets all link texts to white and puts margin to the left and right */
-
 footer a {
   color: white;
   margin: 0 10px;
@@ -271,13 +271,18 @@ footer a:hover {
   color: #ffffff;
   border-bottom: 2px solid #181d4f;
 }
-
+/**********************/
+/**********************/
+/**********************/
 /* Tablets and Smaller */
 
 @media (max-width: 768px) {
+  h3 {
+    text-align: center;
+  }
   .grid,
   .grid-3 {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
 
   .hero {
@@ -287,11 +292,12 @@ footer a:hover {
 
   .image {
     width: 600px;
-    margin-left: 80px;
+    margin-left: 90px;
   }
 
   .stats .flex {
     flex-direction: column;
+    align-items: center;
   }
 
   .stats {
@@ -303,42 +309,36 @@ footer a:hover {
     padding-right: 80px;
   }
 
-  /* (re)Moves the cirle to the center of the card */
-
   .circle {
     background-color: transparent;
-    border: 3px solid purple;
-    height: 90px;
+    border: 3px solid #636ccf;
+    height: 144px;
+    width: 144px;
     position: relative;
     top: -30px;
     left: 270px;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    width: 90px;
   }
 }
-
-/* Mobile devices */
+/**********************/
+/**********************/
+/**********************/
+/* Mobile Devices */
 @media (max-width: 500px) {
   .navbar {
     height: 100px;
   }
 
-  /* Changes the alignment. The logo title stays at the top, the nav links will be below it */
-
   .navbar .flex {
     flex-direction: column;
   }
-
-  /* When hovered on, retain white color and change border to black */
 
   .navbar a:hover {
     color: white;
     border-bottom: 2px solid black;
   }
-
-  /* Set light purple background on nav links, make it a bit round and add some spacing */
 
   .navbar ul {
     background: #181d4f;
@@ -346,39 +346,31 @@ footer a:hover {
     padding: 10px 0;
   }
 
-  /* Align text to center */
-
   .hero {
     height: auto;
     text-align: center;
   }
 
-  /* Reduce font size */
-
-  .little-info {
+  .additional-info {
     font-size: 13px;
   }
 
-  /* Reduce image width */
-
   .image {
     width: 350px;
-    margin-left: 70px;
+    margin-left: 10px;
   }
 
   .stat {
     margin-bottom: 40px;
   }
 
-  /* Move circle once again */
-
   .circle {
     background-color: transparent;
-    border: 3px solid purple;
+    border: 3px solid #636ccf;
     height: 90px;
     position: relative;
     top: -30px;
-    left: 150px;
+    left: 90px;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
