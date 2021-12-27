@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,30 +14,93 @@
     <title>Bootstrap First Example</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light" id="header-nav">
+    <header>
       <div class="container-fluid">
-        <h1 id="title">Bernie's website</h1>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link disabled">Disabled</a>
+      <nav class="navbar navbar-expand-lg navbar-light pb-3" id="header-nav">
+          <h1 id="title">Bernie's website</h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"`
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <a
+              class="nav-link text-decoration-none"
+              aria-current="page"
+              href="#"
+              ><button type="button" class="btn btn-primary">Home</button></a
+            >
+            <a class="nav-link" href="#"
+              ><button type="button" class="btn btn-light">
+                Tier Pricing
+              </button></a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="container">
+      <div class="row justify-content-evenly">
+        <div class="col">
+          <div class="card align-middle" style="width: 18rem">
+            <img src="./images/bernie_03.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Gift Bernie</h5>
+              <p class="card-text">
+                Bernie enjoys treats and snacks. Click here to give a donation
+                with out without membership.
+              </p>
+              <a href="#" class="btn btn-primary">Give Treats</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img src="./images/bernie_01.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">See Memberships</h5>
+              <p class="card-text">
+                There are multiple levels of memberships from those wanting cute
+                pitures to facetime with Bernie!
+              </p>
+              <a href="#" class="btn btn-primary">See Memberships</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img src="./images/bernie_02.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">See Preview</h5>
+              <p class="card-text">
+                Before you begin there is a preview of what to expect.
+              </p>
+              <a href="#" class="btn btn-primary">Preview Content</a>
+            </div>
           </div>
         </div>
       </div>
-    </nav>
+    </section>
+    <section class="container-xxl footer-wrapper">
+      <div class="row ">
+        <div class="col">
+          <h3>Contact Us</h3>
+          <h4>(555)555-5555</h4>
+        </div>
+        <div class="col">
+          <h3>Find Us Online</h3>
+        </div>
+      </div>
+    </section>
 
     <!-- JavaScript Bundle with Popper -->
     <script

@@ -1,16 +1,14 @@
-body {
-  background: rgb(140, 137, 189);
-}
-
 #header-nav {
   /* background-color: transparent; */
   border-bottom: 2px solid white;
 }
 
 #title {
-  color: white;
+  color: #514da5;
 }
 
-.navbar-toggler {
-  border: 1px solid white !important;
+.footer-wrapper {
+  height: 200px;
+  background-color: #514da5;
+  color: white;
 }
