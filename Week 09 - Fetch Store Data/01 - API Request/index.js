@@ -1,3 +1,5 @@
+// For Getting Stuff Only
+
 const jokeButton = document.getElementById('joke-button');
 jokeButton.addEventListener('click', () => {
   const result = fetch('https://api.chucknorris.io/jokes/random');
