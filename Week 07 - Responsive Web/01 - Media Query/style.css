@@ -12,6 +12,11 @@ h3 {
   text-align: center;
 }
 
+/**
+    max width on media query means that the styles will apply
+    only on screens that are smaller or equal to the max width
+*/
+
 /* if screen is 768 or under: tablet size */
 @media only screen and (max-width: 768px) {
   body {
@@ -22,11 +27,11 @@ h3 {
   }
   h3 {
     font-size: 36px;
-  }
+  }        
 }
 
-/* if screen is 480 or under: mobile phone size */
-@media only screen and (max-width: 480px) {
+/* if screen is 480 or under: mobile phone size: but at 580 for ease of showing */
+@media only screen and (max-width: 580px) {
   body {
     background-color: rgb(182, 105, 192);
   }

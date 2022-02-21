@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  padding-bottom: 45px;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+/**
+    min width on media query means that the styles will apply
+    only on screens that are larger or equal to the min width
+*/
+
+/* if screen is 480 or over: mobile phone size */
+@media only screen and (min-width: 480px) {
+  body {
+    background-color: rgb(182, 105, 192);
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+}
+
+/* if screen is 768 or over: tablet size */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  h3 {
+    font-size: 36px;
+  }
+}
