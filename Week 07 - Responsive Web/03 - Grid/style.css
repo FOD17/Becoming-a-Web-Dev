@@ -15,7 +15,7 @@ h1 {
     fr ~= portion of the remianing space
   */
   grid-template-columns: repeat(4, 1fr);
-  grid-row-gap: 10px;
+  gap: 10px;
 }
 
 .square {
@@ -37,7 +37,7 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 468px) {
+@media only screen and (max-width: 508px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
