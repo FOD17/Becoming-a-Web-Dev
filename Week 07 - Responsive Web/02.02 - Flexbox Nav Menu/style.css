@@ -1,11 +1,17 @@
-body {
+* {
   padding: 0;
   margin: 0;
+  /**
+The width and height properties include the content, padding, and border, but do not include the margin. Note that padding and border will be inside of the box. For example,
+  */
+  box-sizing: border-box;
 }
 
 .container {
+  top: 0;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   gap: 2rem;
   background-color: hsla(222, 26%, 49%, 0.851);
   height: 40px;
