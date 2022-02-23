@@ -17,18 +17,30 @@
         copy and paste examples and discuss
     -->
     <div class="container">
+      <h1>They divide up the columns evenly</h1>
       <div class="row">
         <div class="col bg-primary text-white border">Column 1</div>
         <div class="col bg-primary text-white border">Column 2</div>
         <div class="col bg-primary text-white border">Column</div>
       </div>
       <br />
+      <!-- We can ask for one column to be bigger overall-->
+      <h1>When large they take up 4 columns a piece</h1>
       <div class="row">
         <div class="col-lg-4 bg-secondary text-white border">Column 1</div>
         <div class="col-lg-4 bg-secondary text-white border">Column 2</div>
         <div class="col-lg-4 bg-secondary text-white border">Column 3</div>
       </div>
       <br />
+      <!-- We can ask for one column to be bigger overall-->
+      <h1>One column takes up more space than the others</h1>
+      <div class="row">
+        <div class="col bg-secondary text-white border">Column 1</div>
+        <div class="col-9 bg-secondary text-white border">Column 2</div>
+        <div class="col bg-secondary text-white border">Column 3</div>
+      </div>
+      <br />
+      <h1>We can state at each break point how much space they take up</h1>
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12 bg-danger text-white border">
           Column 1
@@ -37,7 +49,7 @@
           Column 2
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 bg-danger text-white border">
-          Column
+          Column 3
         </div>
       </div>
     </div>

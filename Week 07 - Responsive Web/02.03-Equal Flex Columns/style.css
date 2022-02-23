@@ -1,0 +1,13 @@
+.container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.container > * {
+  /* 
+The flex-basis CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing
+    */
+  flex-basis: 100%;
+}
