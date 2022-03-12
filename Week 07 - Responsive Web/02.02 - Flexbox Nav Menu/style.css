@@ -2,7 +2,9 @@
   padding: 0;
   margin: 0;
   /**
-The width and height properties include the content, padding, and border, but do not include the margin. Note that padding and border will be inside of the box. For example,
+The width and height properties include the content, 
+padding, and border, but do not include the margin.
+ Note that padding and border will be inside of the box. 
   */
   box-sizing: border-box;
 }
