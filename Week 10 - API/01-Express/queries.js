@@ -42,7 +42,24 @@ const createUser = (request, response) => {
       if (error) {
         throw error;
       }
-      response.status(201).send(`User added `);
+      response.status(201).send(`User added`);
+    }
+  );
+};
+
+const updateUser = (request, response) => {
+  console.log('hits');
+  const id = parseInt(request.params.id);
+  const { name, age } = request.body;
+
+  pool.query(
+    'UPDATE user_info SET name = $1, age = $2 WHERE id = $3',
+    [name, age, id],
+    (error, results) => {
+      if (error) {
+        throw error;
+      }
+      response.status(200).send(`User modified with ID: ${id}`);
     }
   );
 };
@@ -63,5 +80,6 @@ module.exports = {
   getUsers,
   getUser,
   createUser,
+  updateUser,
   deleteUser,
 };

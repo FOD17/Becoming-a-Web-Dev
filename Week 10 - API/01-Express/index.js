@@ -1,10 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+const cors = require('cors');
 const port = 3000;
 
 const db = require('./queries');
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use(
   bodyParser.urlencoded({
@@ -21,6 +23,8 @@ app.get('/', (request, response) => {
 
 app.get('/users', db.getUsers);
 app.get('/users/:id', db.getUser);
+
+app.put('/users/:id', db.updateUser);
 
 app.post('/users', db.createUser);
 
